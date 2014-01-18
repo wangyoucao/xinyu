@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.github.miemiedev.smt.repository.PictureDao">
+
+
+   <resultMap id="picDO" type="com.github.miemiedev.smt.entity.Picture">
+                                         
+        <result property="idpic" column="idpic" />
+        <result property="picPath" column="picpath" />
+        <result property="distance" column="distance" />
+        <result property="userID" column="userid"/> 
+         <result property="interestCount" column="interCount"/> 
+          <result property="answerCount" column="ansCount"/> 
+           <result property="createDate" column="createdate"/> 
+            
+       
+    </resultMap>
+    
+    <!-- 添加图片信息 -->
+    <insert id="insertPicture" parameterType="com.github.miemiedev.smt.entity.Picture">
+        INSERT INTO picture
+        (picpath,
+         parentId,
+         locjingdu,
+         locweidu
+        )
+        VALUES ( #{picPath},
+                 #{parentID},
+                 #{locjingdu},
+                 #{locweidu}
+                )
+        
+    </insert>
+  
+<select id="getpiclistBypopular" resultMap="picDO">
+		SELECT *
+		from picture 
+		order by ansCount,interCount
+</select>
+	
+<select id="getpiclistByLatest" resultMap="picDO">
+		SELECT *
+		from picture 
+		order by createdate
+</select>
+<select id="getpiclistByNearby" resultMap="picDO">
+		SELECT *,SQRT(POWER(#{latitude} - locjingdu, 2) + POWER(#{longtitude}  - locweidu, 2)) AS distance FROM  picture ORDER BY distance 
+</select>
+</mapper>
