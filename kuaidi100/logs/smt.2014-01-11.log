@@ -1,8 +1,0 @@
-10:26:34.619 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
-10:26:34.621 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
-10:26:35.812 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
-10:26:36.780 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
-11:13:06.047 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
-11:13:06.050 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
-11:13:06.301 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
-11:13:06.794 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
