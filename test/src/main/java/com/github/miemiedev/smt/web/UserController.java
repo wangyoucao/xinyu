@@ -64,13 +64,13 @@ public class UserController{
      */
     @RequestMapping(value = "postformdata", method = RequestMethod.POST, headers = "Content-Type=multipart/form-data")
     public @ResponseBody
-    String handleFormUpload(@RequestParam("latitude") String latitude,@RequestParam("longtitude") String longtitude,@RequestParam("description") String description, @RequestParam("file") MultipartFile file,HttpServletRequest request, HttpServletResponse response) {
+    String handleFormUpload(@RequestParam(value="latitude",required=false) String latitude,@RequestParam(value="longtitude",required=false) String longtitude,@RequestParam("description") String description, @RequestParam("file")  byte[] bytes,HttpServletRequest request, HttpServletResponse response) {
 
     	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
-        if (!file.isEmpty()) {
-            byte[] bytes = null;
+        if (bytes.length>0) {
+            //byte[] bytes = null;
             try {
-                bytes = file.getBytes();
+                //bytes = file.getBytes();
                // String filePath = "E:\\apache-tomcat-6.0.37\\webapps\\xinwei-demo-web" +  
                 String savePath = request.getRealPath("");
                 String  filePath = savePath+ File.separator+"userpic"+File.separator;  
