@@ -1,0 +1,155 @@
+11:37:07.243 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+11:37:07.246 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+11:37:07.353 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+11:37:07.835 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+11:46:07.309 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+11:46:07.312 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+11:46:07.435 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+11:46:07.691 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+11:47:55.207 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+11:47:55.210 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+11:47:55.256 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+11:47:55.515 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+11:56:23.566 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+11:56:23.569 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+11:56:23.621 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+11:56:23.885 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+13:46:15.162 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+13:46:15.165 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+13:46:15.229 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+13:46:15.617 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+13:47:49.601 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+13:47:49.604 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+13:47:49.657 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+13:47:49.917 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+13:48:56.979 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+13:48:56.981 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+13:48:57.031 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+13:48:57.292 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+13:50:21.161 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+13:50:21.164 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+13:50:21.209 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+13:50:21.474 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+15:58:00.291 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+15:58:00.293 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+15:58:00.477 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+15:58:00.935 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+15:59:19.623 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+15:59:19.625 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+15:59:19.680 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+15:59:19.943 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+16:01:10.600 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:01:10.603 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:01:10.663 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:01:10.917 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+16:01:49.849 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:01:49.851 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:01:49.892 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:01:50.073 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+16:02:36.199 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:02:36.201 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:02:36.252 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:02:36.513 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+16:04:07.143 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:04:07.145 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:04:07.272 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:04:07.533 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+16:11:06.713 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:11:06.716 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:11:06.849 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:11:07.112 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+16:13:07.134 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:13:07.137 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:13:07.266 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:13:07.539 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+16:24:55.104 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:24:55.106 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:24:55.150 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:26:30.732 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:26:30.736 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:26:30.816 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:31:10.616 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:31:10.619 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:31:10.677 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:34:56.743 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:34:56.746 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:34:56.815 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:37:49.929 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:37:49.931 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:37:49.971 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:42:14.745 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:42:14.747 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:42:15.358 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:49:49.904 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:49:49.906 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:49:50.020 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:53:44.468 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:53:44.470 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:53:44.584 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:55:27.623 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:55:27.624 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:55:27.748 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:57:15.152 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:57:15.155 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:57:15.198 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:57:15.462 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+16:59:54.653 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+16:59:54.655 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+16:59:54.776 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:59:55.028 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:03:58.498 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:03:58.500 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:03:58.543 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:03:58.826 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:10:05.995 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:10:05.996 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:10:06.117 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:10:06.373 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:11:14.512 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:11:14.514 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:11:14.627 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:11:14.873 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:12:49.838 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:12:49.840 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:12:49.955 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:12:50.200 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:15:05.401 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:15:05.403 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:15:05.446 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:15:05.698 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:33:23.837 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:33:23.839 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:33:23.955 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:33:24.203 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:35:49.855 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:35:49.857 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:35:49.976 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:35:50.229 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:44:02.568 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:44:02.570 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:44:02.688 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:44:02.924 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:45:34.666 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:45:34.669 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:45:34.789 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:45:35.036 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:46:33.098 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:46:33.099 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:46:33.214 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:46:33.451 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:52:56.771 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:52:56.773 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:52:56.890 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:52:57.145 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:56:19.204 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:56:19.208 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:56:19.362 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:56:19.693 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+17:57:38.565 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+17:57:38.569 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+17:57:38.625 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+17:57:38.986 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
+18:06:45.450 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.if2c.kuaidi.entity' for aliases
+18:06:45.452 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+18:06:45.488 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+18:06:45.762 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\development\kuaidi100\target\classes\com\if2c\kuaidi\repository\KuaidiCallBackDao.mbts.xml]'
