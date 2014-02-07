@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.github.miemiedev</groupId>
-	<artifactId>xinwei-base-web</artifactId>
+	<artifactId>rwar</artifactId>
 	<version>0.1</version>
 	<packaging>war</packaging>
 
