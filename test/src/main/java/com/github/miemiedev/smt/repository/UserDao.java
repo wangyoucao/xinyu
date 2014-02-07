@@ -12,6 +12,7 @@ import java.util.Map;
 public interface UserDao {
 
     public User get(Long id);
+    public boolean add(User user);
 
     public List<User> queryByDeptCode(@Param("deptCode")String deptCode,
                                       @Param("createDate")Date createDate,

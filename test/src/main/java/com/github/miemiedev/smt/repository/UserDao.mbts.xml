@@ -5,23 +5,25 @@
 <mapper namespace="com.github.miemiedev.smt.repository.UserDao">
 
 
-    <resultMap id="userResult" type="User">
-        <id property="id" column="user_id" />
-        <result property="name" column="user_name" />
-        <result property="realName" column="real_name" />
+    <resultMap id="userResult" type="com.github.miemiedev.smt.entity.User">
+        <id property="id" column="id" />
+        <result property="name" column="username" />
         <result property="email" column="email" />
-        <result property="type" column="user_type" />
-        <result property="state" column="user_state" />
-        <result property="createDate" column="create_date" />
+        <result property="state" column="state" />
+         <result property="aliasesName" column="aliases_name" />
+        <result property="createDate" column="createDate" />
     </resultMap>
 
-
+   <insert id="add" parameterType="com.github.miemiedev.smt.entity.User">
+    insert into user (username,email,state,aliases_name) values (#{name},#{email},#{state},#{aliasesName}) 
+   </insert>
 	<select id="get" parameterType="long" resultMap="userResult">
 		select *
-          from FP_USER_BASIC_INFO ubi
+          from user ubi
          where ubi.USER_ID = #{id, jdbcType=NUMERIC}
 	</select>
 
+   
     <select id="queryByDeptCode"  resultMap="userResult">
 		select * from FP_USER_BASIC_INFO ubi where
 		<if test="deptCode != null and deptCode != ''">

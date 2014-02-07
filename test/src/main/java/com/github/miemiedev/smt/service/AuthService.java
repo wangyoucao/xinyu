@@ -15,16 +15,19 @@ import com.github.miemiedev.smt.entity.User;
 import com.github.miemiedev.smt.repository.UserDao;
 
 @Service
-@Transactional(readOnly = true)
+@Transactional(readOnly = false)
 public class AuthService {
 
+    @Autowired
     private UserDao userDao;
 
 
     public User getUserById(Long id){
         return userDao.get(id);
     }
-
+    public boolean add(User user){
+        return userDao.add(user);
+    }
     public List<User> queryByDeptCode(String deptCode, PageBounds pageBounds) throws ParseException {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         return userDao.queryByDeptCode(deptCode, sdf.parse("2010-03-02"), pageBounds);

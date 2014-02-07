@@ -16,6 +16,15 @@ public class User implements Serializable {
     private String type;
     private String state;
     private Date createDate;
+    private String aliasesName;
+
+    public String getAliasesName() {
+        return aliasesName;
+    }
+
+    public void setAliasesName(String aliasesName) {
+        this.aliasesName = aliasesName;
+    }
 
     public Long getId() {
         return id;
