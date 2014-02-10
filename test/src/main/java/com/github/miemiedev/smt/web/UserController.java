@@ -18,11 +18,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
 import com.github.miemiedev.smt.entity.Picture;
+import com.github.miemiedev.smt.entity.User;
 import com.github.miemiedev.smt.service.AuthService;
 import com.github.miemiedev.smt.service.PictureService;
 import com.github.miemiedev.smt.web.util.PageForm;
@@ -54,7 +54,12 @@ public class UserController{
         pageForm.addOrderExpr("REAL_NAME", "nlssort(? ,'NLS_SORT=SCHINESE_PINYIN_M') ? nulls last");
         return authService.queryByDeptCode("", pageForm.toPageBounds());
     }
-    
+  
+    @ResponseBody
+    @RequestMapping(value = "addOrUpdateUser", method = RequestMethod.POST)
+    public boolean register(User user) throws ParseException {        
+        return authService.add(user);
+    }
     
     /**
      * Accepts a POST request with multipart/form-data content
@@ -125,4 +130,6 @@ public class UserController{
 		
 		return pictureService.getpiclist(size,type,latitude,longtitude,page);
 	}
+    
+    
 }
