@@ -5,43 +5,44 @@
 <mapper namespace="com.github.miemiedev.smt.repository.UserDao">
 
 
-    <resultMap id="userResult" type="com.github.miemiedev.smt.entity.User">
-        <id property="id" column="id" />
-        <result property="name" column="username" />
-        <result property="email" column="email" />
-        <result property="state" column="state" />
-         <result property="aliasesName" column="aliases_name" />
-        <result property="createDate" column="createDate" />
-    </resultMap>
+	<resultMap id="userResult" type="com.github.miemiedev.smt.entity.User">
+		<id property="id" column="id" />
+		<result property="name" column="username" />
+		<result property="email" column="email" />
+		<result property="state" column="state" />
+		<result property="aliasesName" column="aliases_name" />
+		<result property="createDate" column="createDate" />
+	</resultMap>
 
-   <insert id="add" parameterType="com.github.miemiedev.smt.entity.User">
-    insert into user (username,email,state,aliases_name) values (#{name},#{email},#{state},#{aliasesName}) 
-   </insert>
+	<insert id="add" parameterType="com.github.miemiedev.smt.entity.User">
+		insert ignore into user (username,email,state,aliases_name) values
+		(#{name},#{email},#{state},#{aliasesName})
+	</insert>
 	<select id="get" parameterType="long" resultMap="userResult">
 		select *
-          from user ubi
-         where ubi.USER_ID = #{id, jdbcType=NUMERIC}
+		from user ubi
+		where ubi.USER_ID = #{id, jdbcType=NUMERIC}
 	</select>
 
-   
-    <select id="queryByDeptCode"  resultMap="userResult">
+
+	<select id="queryByDeptCode" resultMap="userResult">
 		select * from FP_USER_BASIC_INFO ubi where
 		<if test="deptCode != null and deptCode != ''">
-            branch_id = #{deptCode} and
+			branch_id = #{deptCode} and
 		</if>
-		 create_date &lt; #{createDate}
+		create_date &lt; #{createDate}
 	</select>
 
-    <select id="search" parameterType="map" resultType="LinkedCaseInsensitiveMap">
-        select * from FP_USER_BASIC_INFO ubi
-        <where>
-            <if test="userName != null">
-                user_name like '%'|| #{userName} || '%'
-            </if>
-            <if test="realName != null">
-                and real_name like '%'|| #{realName} || '%'
-            </if>
+	<select id="search" parameterType="map" resultType="LinkedCaseInsensitiveMap">
+		select * from FP_USER_BASIC_INFO ubi
+		<where>
+			<if test="userName != null">
+				user_name like '%'|| #{userName} || '%'
+			</if>
+			<if test="realName != null">
+				and real_name like '%'|| #{realName} || '%'
+			</if>
 
-        </where>
-    </select>
+		</where>
+	</select>
 </mapper>
