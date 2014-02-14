@@ -1,0 +1,135 @@
+14:25:12.306 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.github.miemiedev.smt.entity' for aliases
+14:25:12.308 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+14:25:12.391 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:25:12.410 [main] ERROR o.a.ibatis.executor.BaseExecutor - Could not get a databaseId from dataSource
+org.apache.commons.dbcp.SQLNestedException: Cannot create JDBC driver of class 'com.mysql.jdbc.Driver' for connect URL ''
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1150) ~[commons-dbcp-1.2.2.jar:1.2.2]
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880) ~[commons-dbcp-1.2.2.jar:1.2.2]
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseProductName(VendorDatabaseIdProvider.java:76) ~[mybatis-3.2.1.jar:3.2.1]
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseName(VendorDatabaseIdProvider.java:61) ~[mybatis-3.2.1.jar:3.2.1]
+	at org.apache.ibatis.mapping.VendorDatabaseIdProvider.getDatabaseId(VendorDatabaseIdProvider.java:49) ~[mybatis-3.2.1.jar:3.2.1]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:445) [mybatis-spring-1.2.0.jar:1.2.0]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:336) [mybatis-spring-1.2.0.jar:1.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1547) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1485) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:910) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:853) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:768) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1200) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1107) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1362) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:726) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:523) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:357) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:335) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:895) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:853) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:768) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireByType(AbstractAutowireCapableBeanFactory.java:1200) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1107) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getTypeForFactoryBean(AbstractBeanFactory.java:1362) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryBean(AbstractAutowireCapableBeanFactory.java:726) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isTypeMatch(AbstractBeanFactory.java:523) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:357) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:335) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.BeanFactoryUtils.beanNamesForTypeIncludingAncestors(BeanFactoryUtils.java:187) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:895) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:853) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:768) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:486) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:87) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:285) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1122) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:626) [spring-beans-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479) [spring-context-3.2.2.RELEASE.jar:3.2.2.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:106) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:57) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:100) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:248) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.TestContext.loadApplicationContext(TestContext.java:124) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.TestContext.getApplicationContext(TestContext.java:148) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:313) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:211) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:288) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:284) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:231) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:88) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238) [junit.jar:na]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63) [junit.jar:na]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236) [junit.jar:na]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53) [junit.jar:na]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229) [junit.jar:na]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309) [junit.jar:na]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:174) [spring-test-3.2.0.RELEASE.jar:3.2.0.RELEASE]
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:467) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:683) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:390) [.cp/:na]
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:197) [.cp/:na]
+Caused by: java.sql.SQLException: No suitable driver
+	at java.sql.DriverManager.getDriver(DriverManager.java:289) ~[na:1.7.0_21]
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1143) ~[commons-dbcp-1.2.2.jar:1.2.2]
+	... 92 common frames omitted
+14:25:12.461 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\PicturerDao.mbts.xml]'
+14:25:12.489 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\UserDao.mbts.xml]'
+14:27:03.906 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.github.miemiedev.smt.entity' for aliases
+14:27:03.908 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+14:27:03.954 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:27:04.209 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\PicturerDao.mbts.xml]'
+14:27:04.237 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\UserDao.mbts.xml]'
+14:27:10.252 [main] DEBUG c.g.m.smt.repository.UserDao.add - ooo Using Connection [jdbc:mysql://10.0.16.115:3306/test?characterEncoding=UTF-8, UserName=root@10.0.246.107, MySQL-AB JDBC Driver]
+14:27:10.256 [main] DEBUG c.g.m.smt.repository.UserDao.add - ==>  Preparing: insert into user (username,email,state,aliases_name) values (?,?,?,?) 
+14:45:14.349 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.github.miemiedev.smt.entity' for aliases
+14:45:14.351 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+14:45:14.393 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:45:14.617 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\PicturerDao.mbts.xml]'
+14:45:14.639 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\UserDao.mbts.xml]'
+14:45:14.948 [main] DEBUG c.g.m.smt.repository.UserDao.add - ooo Using Connection [jdbc:mysql://10.0.16.115:3306/test?characterEncoding=UTF-8, UserName=root@10.0.246.107, MySQL-AB JDBC Driver]
+14:45:14.952 [main] DEBUG c.g.m.smt.repository.UserDao.add - ==>  Preparing: insert into user (username,email,state,aliases_name) values (?,?,?,?) 
+14:45:14.981 [main] DEBUG c.g.m.smt.repository.UserDao.add - ==> Parameters: saff(String), asdfdf@sina.com(String), valid(String), null
+14:46:56.754 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.github.miemiedev.smt.entity' for aliases
+14:46:56.756 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+14:46:56.798 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:46:57.018 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\PicturerDao.mbts.xml]'
+14:46:57.040 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\UserDao.mbts.xml]'
+14:46:57.348 [main] DEBUG c.g.m.smt.repository.UserDao.add - ooo Using Connection [jdbc:mysql://10.0.16.115:3306/test?characterEncoding=UTF-8, UserName=root@10.0.246.107, MySQL-AB JDBC Driver]
+14:46:57.352 [main] DEBUG c.g.m.smt.repository.UserDao.add - ==>  Preparing: insert into user (username,email,state,aliases_name) values (?,?,?,?) 
+14:46:57.378 [main] DEBUG c.g.m.smt.repository.UserDao.add - ==> Parameters: saff(String), asdfdf@sina.com(String), valid(String), gggg(String)
+14:47:55.940 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'com.github.miemiedev.smt.entity' for aliases
+14:47:55.942 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Registered type alias: 'class org.springframework.util.LinkedCaseInsensitiveMap'
+14:47:55.983 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:47:56.204 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\PicturerDao.mbts.xml]'
+14:47:56.226 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [D:\test\test\target\classes\com\github\miemiedev\smt\repository\UserDao.mbts.xml]'
+14:47:56.532 [main] DEBUG c.g.m.smt.repository.UserDao.add - ooo Using Connection [jdbc:mysql://10.0.16.115:3306/test?characterEncoding=UTF-8, UserName=root@10.0.246.107, MySQL-AB JDBC Driver]
+14:47:56.535 [main] DEBUG c.g.m.smt.repository.UserDao.add - ==>  Preparing: insert into user (username,email,state,aliases_name) values (?,?,?,?) 
+14:47:56.563 [main] DEBUG c.g.m.smt.repository.UserDao.add - ==> Parameters: saff(String), asdfdf@sina.com(String), 0(String), gggg(String)
