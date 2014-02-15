@@ -16,7 +16,7 @@
 
 	<insert id="add" parameterType="com.github.miemiedev.smt.entity.User">
 		insert ignore into user (username,email,state,aliases_name) values
-		(#{name},#{email},#{state},#{aliasesName})
+		(#{name},#{email},#{state},#{realName})
 	</insert>
 	<select id="get" parameterType="long" resultMap="userResult">
 		select *
