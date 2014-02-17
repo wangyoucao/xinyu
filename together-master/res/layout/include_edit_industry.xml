@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" style="@style/Style_Profile_TopBottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/arrow" android:layout_alignParentLeft="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/profile_sign_title_layout" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="18.0sp" android:textColor="@color/text_title" android:id="@id/profile_sign_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="职业" />
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/layout_icon_container" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="right|center" android:id="@id/tv_industry" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/user_profile_default_industry" android:singleLine="true" android:layout_toLeftOf="@id/icon_industry" android:layout_centerVertical="true" />
+                    <ImageView android:gravity="center_vertical" android:id="@id/icon_industry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <com.immomo.momo.android.view.EmoteTextView android:id="@id/tv_industry_job" android:text="" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Profile_Item_Bottom" />
+    </LinearLayout>
+</RelativeLayout>

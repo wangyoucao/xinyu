@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@id/relativeLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <com.my.views.DouNavigationView
+            android:id="@id/eventdetailnavbar"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/navbar_height"
+            android:layout_alignParentTop="true" />
+
+        <RelativeLayout
+            android:id="@id/relativeLayout4"
+            android:layout_width="fill_parent"
+            android:layout_height="52.0dip"
+            android:layout_alignParentBottom="true" >
+
+            <LinearLayout
+                android:id="@id/linearLayout133"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#ff3b4b55"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1.0" >
+
+                    <LinearLayout
+                        android:id="@id/eventinterestlayout"
+                        android:layout_width="120.0dip"
+                        android:layout_height="42.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/request_corner"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@id/eventinterestimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/icon_like" />
+
+                        <TextView
+                            android:id="@id/eventinterestlabeltext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingLeft="15.0dip"
+                            android:paddingRight="15.0dip"
+                            android:text="@string/interest_title"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0dip" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@id/eventinterestprogerssbar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/split_line" />
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5.0dip"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:layout_weight="1.0" >
+
+                    <LinearLayout
+                        android:id="@id/eventjoinlayout"
+                        android:layout_width="120.0dip"
+                        android:layout_height="42.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/request_corner"
+                        android:orientation="vertical" >
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal" >
+
+                            <ImageView
+                                android:id="@id/eventjoinimage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_join" />
+
+                            <TextView
+                                android:id="@id/eventjoindatetext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/icon_join"
+                                android:textColor="#ffffffff"
+                                android:textSize="12.0dip" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@id/eventjoinlabeltext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:paddingLeft="15.0dip"
+                            android:paddingRight="15.0dip"
+                            android:text="@string/join_title"
+                            android:textColor="#ff000000"
+                            android:textSize="12.0dip" />
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@id/eventjoinprogerssbar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:visibility="invisible" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ScrollView
+            android:id="@id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/relativeLayout4"
+            android:layout_below="@id/eventdetailnavbar"
+            android:fadingEdge="none" >
+
+            <LinearLayout
+                android:id="@id/linearLayout10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@id/linearLayout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@id/eventdetailtitletext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:layout_marginTop="12.0dip"
+                        android:textColor="#ff000000"
+                        android:textSize="18.0dip" />
+
+                    <LinearLayout
+                        android:id="@id/linearLayout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="true" >
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:id="@id/eventdetailimageref"
+                                android:layout_width="86.0dip"
+                                android:layout_height="130.0dip"
+                                android:layout_marginLeft="5.0dip"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/pic_detail_null" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|right|center"
+                                android:src="@drawable/icon_zoomin" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:id="@id/linearLayout3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:id="@id/linearLayout4"
+                                style="@style/event_detail_info_layout_style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <ImageView
+                                    android:id="@id/imageView2"
+                                    style="@style/event_detail_info_image_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_date" />
+
+                                <TextView
+                                    android:id="@id/eventdetaildatetext"
+                                    style="@style/event_detail_text_style" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@id/event_address_info"
+                                style="@style/event_detail_info_layout_style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_bg"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:paddingBottom="5.0dip"
+                                android:paddingLeft="2.0dip"
+                                android:paddingRight="5.0dip"
+                                android:paddingTop="5.0dip" >
+
+                                <ImageView
+                                    android:id="@id/imageView3"
+                                    style="@style/event_detail_info_image_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.0dip"
+                                    android:src="@drawable/icon_spot" />
+
+                                <TextView
+                                    android:id="@id/eventdetailaddresstext"
+                                    style="@style/event_detail_text_style"
+                                    android:maxLines="4" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@id/linearLayout71"
+                                style="@style/event_detail_info_layout_style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <ImageView
+                                    android:id="@id/imageView51"
+                                    style="@style/event_detail_info_image_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/icon_sponsor" />
+
+                                <TextView
+                                    android:id="@id/eventdetailsponsortext"
+                                    style="@style/event_detail_text_style" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@id/linearLayout7"
+                                style="@style/event_detail_info_layout_style"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" >
+
+                                <ImageView
+                                    android:id="@id/imageView5"
+                                    style="@style/event_detail_info_image_style"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2.0dip"
+                                    android:src="@drawable/icon_catalog" />
+
+                                <TextView
+                                    android:id="@id/eventdetailcategroytext"
+                                    style="@style/event_detail_text_style" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/linearLayout9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8.0dip"
+                        android:layout_marginLeft="15.0dip"
+                        android:layout_marginTop="8.0dip"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@id/ablumtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/event_photo_title"
+                            android:textColor="#ff000000"
+                            android:textSize="18.0dip" />
+
+                        <ProgressBar
+                            android:id="@id/imageloadprogerssbar"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical" />
+                    </LinearLayout>
+
+                    <com.my.views.MyHorizontalScrollView
+                        android:id="@id/horizontalScrollView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="64.0dip"
+                        android:background="@drawable/bg_spec_null"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:id="@id/eventimageslayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="horizontal" />
+                    </com.my.views.MyHorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/event_detail_layout_interval_style"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/event_introduce_title"
+                        android:textColor="#ff000000"
+                        android:textSize="18.0dip" />
+
+                    <TextView
+                        android:id="@id/eventdetailsummarytext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="all"
+                        android:lineSpacingMultiplier="1.3"
+                        android:text="TextView"
+                        android:textColor="#ff6b6b6b"
+                        android:textColorHighlight="#ff6b6b6b" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

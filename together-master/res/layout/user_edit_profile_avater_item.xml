@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/pic_item_margin" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/avatar_imageview" android:background="@color/profile_avater_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:orientation="vertical" android:id="@id/avatar_add" android:background="@drawable/btn_profile_add_avatar_bg" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_marginTop="10.0dip" android:src="@drawable/ic_useredit_add_normal" android:layout_weight="1.0" style="@style/WrapContent" />
+        <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_weight="1.0" style="@style/WrapContent">
+            <com.immomo.momo.android.view.HandyTextView android:textSize="13.0sp" android:textColor="@color/white" android:id="@id/chn_text_add" android:text="添加照片" android:layout_below="@id/en_text_add" style="@style/WrapContent" />
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/avatar_cover" android:background="@drawable/profile_avater_cover" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

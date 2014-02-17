@@ -73,7 +73,7 @@ public class UserController{
      */
     @RequestMapping(value = "postformdata", method = RequestMethod.POST, headers = "Content-Type=multipart/form-data")
     public @ResponseBody
-    String handleFormUpload(@RequestParam(value="latitude",required=false) String latitude,@RequestParam(value="longtitude",required=false) String longtitude,@RequestParam("description") String description, @RequestParam("file")  byte[] bytes,HttpServletRequest request, HttpServletResponse response) {
+    String handleFormUpload(@RequestParam(value="latitude",required=false) String latitude,@RequestParam(value="longtitude",required=false) String longtitude,@RequestParam("create_time") String create_time, @RequestParam("file")  byte[] bytes,HttpServletRequest request, HttpServletResponse response) {
 
     	System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         if (bytes.length>0) {
@@ -109,13 +109,14 @@ public class UserController{
                 pic.setParentID(0);
                 pic.setLocjingdu(latitude);
                 pic.setLocweidu(longtitude);
+                pic.setCreateDate(create_time);
                 pictureService.insertPicture(pic);
             } catch (IOException e) {
                 e.printStackTrace();
                 
             }
             //System.out.println("fileName"+fileName);
-            return "file upload received! Name:[" + description + "] Size:[" + bytes.length + "]";
+            return "file upload received! Name:[" + create_time + "] Size:[" + bytes.length + "]";
         } else {
             return "file upload failed!";
         }

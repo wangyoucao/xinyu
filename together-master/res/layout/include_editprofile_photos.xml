@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/avatar_container" android:background="@color/normal_photo_bg" android:padding="@dimen/pic_layout_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/avatar_line0" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/avatar_block0" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+        <include android:id="@id/avatar_block1" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+        <include android:id="@id/avatar_block2" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+        <include android:id="@id/avatar_block3" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/avatar_line1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/avatar_block4" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+        <include android:id="@id/avatar_block5" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+        <include android:id="@id/avatar_block6" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+        <include android:id="@id/avatar_block7" android:layout_weight="1.0" layout="@layout/user_edit_profile_avater_item" />
+    </LinearLayout>
+    <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_editavatar_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/user_profile_edit_avatar_tip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/avatar_container" android:background="@color/profile_photo_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.immomo.momo.android.view.UserPhotosView android:id="@id/normal_photoview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.immomo.momo.android.view.HandyTextView android:textSize="14.0sp" android:textColor="@color/text_content" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/profile_baned_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/user_profile_baned_tip" />
+</LinearLayout>
