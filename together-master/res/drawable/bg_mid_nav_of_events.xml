@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="false" android:state_enabled="true" android:state_selected="false" android:state_pressed="false">
+        <bitmap android:src="@drawable/btn_mid" />
+    </item>
+    <item android:state_enabled="false">
+        <color android:color="#ff557f8d" />
+    </item>
+</selector>

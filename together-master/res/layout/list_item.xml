@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listview_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+     >
+
+    <ImageView
+        android:id="@+id/arrow_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:background="@drawable/accessory_disclosure" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/arrow_star"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingLeft="2dp"
+            android:orientation="vertical"
+             >
+             <TextView
+	            android:id="@+id/sItemUid"
+	            android:layout_width="120dp"
+	            android:layout_height="30dp"
+	            android:layout_gravity="center"
+	            android:padding="2dp"
+	            android:textColor="@color/white"
+	            android:scaleType="centerCrop" 
+	            android:text="info"
+                android:textSize="20dp" />
+             <TextView
+	            android:layout_width="120dp"
+	            android:layout_height="20dp"
+	            android:layout_gravity="center"
+	            android:padding="2dp"
+	            android:textColor="@color/white"
+	            android:scaleType="centerCrop" 
+	            android:text="发布于"
+                android:textSize="12dp" />
+              <TextView
+	            android:id="@+id/sItemTime"
+	            android:layout_width="120dp"
+	            android:layout_height="25dp"
+	            android:layout_gravity="center"
+	            android:padding="2dp"
+	            android:textColor="@color/white"
+	            android:scaleType="centerCrop" 
+	            android:text="info"
+                android:textSize="14dp" />
+	    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+             >
+
+            <TextView
+                android:id="@+id/sItemInfo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingTop="2dp"
+                android:textColor="@color/white"
+                android:text="info"
+                android:textSize="18dp" />
+            
+            
+            
+            <TextView
+                
+                android:id="@+id/sItemDescription"
+                android:paddingTop="3dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textColor="@color/white"
+                android:text="title"
+                android:textSize="12dp" />
+            
+            <TextView
+                android:id="@+id/sItemPlace"
+                android:paddingTop="5dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blue"
+                android:text="title"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

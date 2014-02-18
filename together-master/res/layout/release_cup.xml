@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffebeae6"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:paddingLeft="5.0dip"
+        android:paddingRight="5.0dip" >
+
+        <LinearLayout
+            android:id="@+id/rel_cup_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/rel_edit1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/editcorner"
+                    android:gravity="center_vertical"
+                    android:hint="例：阿三饭店"
+                    android:maxLength="10"
+                    android:paddingLeft="10.0dip"
+                    android:textSize="16.0sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/rel_txt2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="活动标题"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/huodongName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40.0dip"
+                    android:layout_below="@+id/rel_txt2"
+                    android:layout_marginTop="5.0dip"
+                    android:background="@drawable/editcorner"
+                    android:hint="例：指定主食+指定饮料20元"
+                    android:paddingLeft="10.0dip"
+                    android:textSize="16.0sp" />
+
+                <TextView
+                    android:id="@+id/rel_et2size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/rel_edit2"
+                    android:layout_marginRight="10.0dip"
+                    android:text="剩17字"
+                    android:textColor="@color/gray"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/huodongType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:entries="@array/birds" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="活动类型"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动地点" />
+
+                <EditText
+                    android:id="@+id/activityAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView2"
+                    android:background="@drawable/editcorner"
+                    android:ems="10"
+                    android:focusable="false" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5.0dip"
+                android:text="优惠券有效期"
+                android:textColor="@+android:color/black"
+                android:textSize="16.0sp" />
+
+            <RelativeLayout
+                android:id="@+id/rel_rl_but1"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="10.0dip" >
+
+                <TextView
+                    android:id="@+id/rel_txt4"
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5.0dip"
+                    android:text="起始日期"
+                    android:textColor="@+android:color/black"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/startTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rel_txt4"
+                    android:background="@drawable/editcorner"
+                    android:inputType="text"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_rl_but2"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="10.0dip" >
+
+                <TextView
+                    android:id="@+id/rel_txt5"
+                    android:layout_width="80.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="5.0dip"
+                    android:text="结束日期"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/endTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/rel_txt5"
+                    android:background="@drawable/editcorner"
+                    android:inputType="text"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_rl_but3"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:layout_marginTop="10.0dip" >
+
+                <TextView
+                    android:id="@+id/rel_txt_poi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp" />
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_toRightOf="@+id/rel_txt_poi"
+                    android:text="上传图片" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/rel_txt3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5.0dip"
+                    android:text="优惠详情(限108字)"
+                    android:textColor="@android:color/black"
+                    android:textSize="16.0sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rel_edit3_ll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="160.0dip"
+                    android:layout_below="@id/rel_txt3"
+                    android:background="@drawable/editcorner"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/rel_tv_edit3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="凭此券可享受以下优惠："
+                        android:textColor="@android:color/black"
+                        android:textSize="14.0sp" />
+
+                    <EditText
+                        android:id="@+id/huodongDetail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55.0dip"
+                        android:layout_below="@+id/rel_tv_edit3"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="例：牛肉石锅拌饭+金桔茶  原价30元，现价20元"
+                        android:textSize="16.0sp" />
+
+                    <TextView
+                        android:id="@+id/rel_tv_edit4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rel_edit3"
+                        android:layout_marginTop="6.0dip"
+                        android:text="使用限制(可不填)"
+                        android:textColor="@android:color/black"
+                        android:textSize="14.0sp" />
+
+                    <EditText
+                        android:id="@+id/HuodongNote"
+                        android:layout_width="fill_parent"
+                        android:layout_height="55.0dip"
+                        android:layout_below="@+id/rel_tv_edit4"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="例：本优惠券不可与其他活动同享"
+                        android:textSize="16.0sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/rel_et3size_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/rel_edit3_ll"
+                    android:layout_marginRight="10.0dip"
+                    android:text="剩108字"
+                    android:textColor="@color/gray"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/rel_btn"
+                android:layout_width="200.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10.0dip"
+                android:layout_marginTop="10.0dip"
+                android:gravity="center"
+                android:text="确 认"
+                android:textColor="@color/white"
+                android:textSize="17.0sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

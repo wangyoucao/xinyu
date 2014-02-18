@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2011 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+
+    <dimen name="navbar_height">44.0dip</dimen>
+    <dimen name="navbar_button_width">81.0dip</dimen>
+    <dimen name="login_item_width">240.0dip</dimen>
+    <dimen name="hot_text_margin_top">6.0dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- momo -->
+    <dimen name="userhead_size">76.0dip</dimen>
+    <dimen name="text_list_title">16.0sp</dimen>
+    <dimen name="text_list_desc">13.0sp</dimen>
+    <dimen name="text_view_content">15.0sp</dimen>
+    <dimen name="text_view_desc">13.0sp</dimen>
+    <dimen name="text_small_notice">11.0sp</dimen>
+    <dimen name="diment_temp">20.0dip</dimen>
+    <dimen name="shape_corners">4.0dip</dimen>
+    <dimen name="user_gender_corners">2.0dip</dimen>
+    <dimen name="btn_shape_corners">6.0dip</dimen>
+    <dimen name="avator_round">6.0dip</dimen>
+    <dimen name="bg_belowphoto_corner">16.0dip</dimen>
+    <dimen name="round_filter_radius">7.0px</dimen>
+    <dimen name="bottomtabbar">45.0dip</dimen>
+    <dimen name="maintabbottomtabbar">50.0dip</dimen>
+    <dimen name="dialog_round_radius">4.0dip</dimen>
+    <dimen name="dialog_padding">15.0dip</dimen>
+    <dimen name="dialog_edittext_height">45.0dip</dimen>
+    <dimen name="message_titlephoto_size">20.0dip</dimen>
+    <dimen name="message_userphoto_size">40.0dip</dimen>
+    <dimen name="message_padding_default">4.0dip</dimen>
+    <dimen name="message_padding_textmsgeditor_bottom">7.0dip</dimen>
+    <dimen name="message_padding_contentArrow">11.0dip</dimen>
+    <dimen name="message_content_maxwidth">189.0dip</dimen>
+    <dimen name="message_status_new_stroke">2.0dip</dimen>
+    <dimen name="imagebrower_currentpage">30.0sp</dimen>
+    <dimen name="weibo_textsize">16.0sp</dimen>
+    <dimen name="pic_item_margin">2.0dip</dimen>
+    <dimen name="vip_pic_item_margin">1.0dip</dimen>
+    <dimen name="member_arrow_margin_left">12.0dip</dimen>
+    <dimen name="pic_layout_margin">10.0dip</dimen>
+    <dimen name="avatar_round_dip">4.0dip</dimen>
+    <dimen name="button_padding">10.0dip</dimen>
+    <dimen name="button_layout_margin">5.0dip</dimen>
+    <dimen name="button_min_width">70.0dip</dimen>
+    <dimen name="listitem_content_big">18.0sp</dimen>
+    <dimen name="listitem_content_mid">15.0sp</dimen>
+    <dimen name="listitem_content_sml">12.0sp</dimen>
+    <dimen name="message_status_new_textsize">8.0sp</dimen>
+    <dimen name="message_map_width">220.0dip</dimen>
+    <dimen name="message_map_height">120.0dip</dimen>
+    <dimen name="splash_ft_margintop">70.0dip</dimen>
+    <dimen name="emoji_item_width">35.0dip</dimen>
+    <dimen name="momoemote_item_width">40.0dip</dimen>
+    <dimen name="momogifemote_item_width">55.0dip</dimen>
+    <dimen name="create_group_ui_textsize">16.0sp</dimen>
+    <dimen name="params1_top">20.0dip</dimen>
+    <dimen name="params_left">0.66666675dip</dimen>
+    <dimen name="params2_top">0.0dip</dimen>
+    <dimen name="params2_left">10.0dip</dimen>
+    <dimen name="params3_top">2.0dip</dimen>
+    <dimen name="second_step_params1">36.0dip</dimen>
+    <dimen name="second_step_params2_left_margin">12.0dip</dimen>
+    <dimen name="style_patterns">16.0dip</dimen>
+    <dimen name="profile_bottom_offset">20.0dip</dimen>
+    <dimen name="welcome_avatar_margin">2.0dip</dimen>
+    <dimen name="indicator_right_padding">10.0dip</dimen>
+    <dimen name="indicator_corner_radius">12.0dip</dimen>
+    <dimen name="indicator_internal_padding">4.0dip</dimen>
+    <dimen name="header_footer_left_right_padding">25.0dip</dimen>
+    <dimen name="header_footer_top_bottom_padding">10.0dip</dimen>
+    <dimen name="header_footer_internal_padding">20.0dip</dimen>
+    <dimen name="selecttype_item_width">60.0dip</dimen>
+    <dimen name="eventprofile_item_title_size">22.0sp</dimen>
+    <dimen name="eventprofile_tv_title_size">18.0sp</dimen>
+    <dimen name="eventprofile_tv_content_size">14.0sp</dimen>
+    <dimen name="eventprofile_tv_tag_size">12.0sp</dimen>
+    <dimen name="eventprofile_avatar_list_width">82.5dip</dimen>
+    <dimen name="eventprofile_avatar_list_height">110.0dip</dimen>
+    <dimen name="eventprofile_avatar_width">78.0dip</dimen>
+    <dimen name="eventprofile_avatar_height">104.0dip</dimen>
+    <dimen name="tiebapager_item_width">50.0dip</dimen>
+    <dimen name="tiebapager_item_height">55.0dip</dimen>
+    <dimen name="tiebapager_item_select_width">55.0dip</dimen>
+    <dimen name="tiebapager_item_select_height">59.0dip</dimen>
+    <dimen name="message_editor_hight">52.0dip</dimen>
+    <dimen name="listitem_feed_image_hight">80.0dip</dimen>
+
+</resources>

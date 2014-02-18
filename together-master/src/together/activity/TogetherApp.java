@@ -1,0 +1,218 @@
+package together.activity;
+
+
+import together.utils.LBSLocation;
+import android.app.Application;
+import android.content.Context;
+import android.util.Log;
+import android.widget.Toast;
+
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
+import com.baidu.mapapi.BMapManager;
+import com.baidu.mapapi.MKGeneralListener;
+import com.baidu.mapapi.map.LocationData;
+import com.baidu.mapapi.map.MKEvent;
+import com.baidu.mapapi.map.MapView;
+import com.baidu.mapapi.map.MyLocationOverlay;
+import com.baidu.platform.comapi.basestruct.GeoPoint;
+import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.nostra13.universalimageloader.core.assist.QueueProcessingType;
+
+public class TogetherApp extends Application{
+
+	private static TogetherApp mApp=null;
+	private BMapManager mMapManager=null;
+	private final String key="1F2D99F56D2766A3C32DD06ED9EBDB603595634C";
+	private static LocationClient mLocationClient=null;
+	public static GeoPoint mylocation; 
+	public BDLocation currlocation = null;
+
+	/**
+	 * 创建application
+	 * */
+	public void onCreate(){
+		super.onCreate();
+		mApp=this;
+		initMapManager(this);
+		mLocationClient=new LocationClient(this);
+		mLocationClient.registerLocationListener(new BDLocationListener(){
+
+			@Override
+			public void onReceiveLocation(BDLocation arg0) {
+				if(arg0==null){
+					System.out.println("location null");
+					return;
+				}
+				//System.out.println("lala"+arg0.getLongitude());
+				currlocation =arg0;
+				Toast.makeText(getInstance(), arg0.getLongitude()+", "+arg0.getLatitude(),Toast.LENGTH_SHORT  );
+				GeoPoint newlocation=new GeoPoint((int)(arg0.getLatitude()*1e6),(int) (arg0.getLongitude()*1e6));
+				mylocation=newlocation;
+				
+			}
+
+			@Override
+			public void onReceivePoi(BDLocation arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+		});
+		mLocationClient.start();
+		//LBSLocation.getInstance(this).startLocation();
+
+		
+		//
+		initImageLoader(getApplicationContext());
+	}
+	public static void initImageLoader(Context context) {
+		// This configuration tuning is custom. You can tune every option, you may tune some of them,
+		// or you can create default configuration by
+		//  ImageLoaderConfiguration.createDefault(this);
+		// method.
+		ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)
+				.threadPriority(Thread.NORM_PRIORITY - 2)
+				.denyCacheImageMultipleSizesInMemory()
+				.discCacheFileNameGenerator(new Md5FileNameGenerator())
+				.tasksProcessingOrder(QueueProcessingType.LIFO)
+				.writeDebugLogs() // Remove for release app
+				.build();
+		// Initialize ImageLoader with configuration.
+		ImageLoader.getInstance().init(config);
+	}
+	/**
+	 * 终止application
+	 * */
+	public void onTerminate(){
+		if (mMapManager!=null)
+			mMapManager.destroy();
+		mMapManager=null;
+		super.onTerminate();
+	}
+
+	/**
+	 * 初始化地图manager
+	 * @param context Context
+	 * */
+	public void initMapManager(Context context){
+
+		Log.v("app", "init mapmanager");
+		if(mMapManager==null)
+			mMapManager=new BMapManager(context);
+		if(!mMapManager.init(key, new MyGeneralListener())){
+			Toast.makeText(context, "mMapManager init error!", Toast.LENGTH_LONG).show();
+		}
+
+	}
+
+	/***
+	 * 获得应用instance
+	 * @return application
+	 */
+	public static Application getInstance(){
+		return mApp;
+	}
+
+	/***
+	 * 获得地图管理器
+	 * @return manager BMapManager
+	 */
+	public BMapManager getMapManager(){
+		return mMapManager;
+	}
+
+	/***
+	 * 获得LocationClient
+	 * @return client LocationClient
+	 */
+	public static LocationClient getLocationClient(){
+		return mLocationClient;
+	}
+
+	/***
+	 * 获得当前位置
+	 * @return point GeoPoint
+	 */
+	public static GeoPoint getMyLocation(){
+		return mylocation;
+	}
+
+	/***
+	 *  常用事件监听，用来处理通常的网络错误，授权验证错误等
+	 * @author zhang
+	 *
+	 */
+    static class MyGeneralListener implements MKGeneralListener {
+        
+        @Override
+        public void onGetNetworkState(int iError) {
+            if (iError == MKEvent.ERROR_NETWORK_CONNECT) {
+                Toast.makeText(TogetherApp.getInstance().getApplicationContext(), "您的网络出错啦！",
+                    Toast.LENGTH_LONG).show();
+            }
+            else if (iError == MKEvent.ERROR_NETWORK_DATA) {
+                Toast.makeText(TogetherApp.getInstance().getApplicationContext(), "输入正确的检索条件！",
+                        Toast.LENGTH_LONG).show();
+            }
+
+        }
+
+        @Override
+        public void onGetPermissionState(int iError) {
+            if (iError ==  MKEvent.ERROR_PERMISSION_DENIED) {
+                //授权Key错误：
+                Toast.makeText(TogetherApp.getInstance().getApplicationContext(), 
+                        "请在 DemoApplication.java文件输入正确的授权Key！", Toast.LENGTH_LONG).show();
+            }
+        }
+    }
+    
+    /***
+     * 位置监听器
+     * @author zhang
+     *
+     */
+    static class MyLocationListener implements BDLocationListener{
+    	
+    	private MapView mapView;
+    	
+    	public MyLocationListener(MapView mapView){
+    		this.mapView=mapView;
+    	}
+
+		@Override
+		public void onReceiveLocation(BDLocation arg0) {
+			// TODO Auto-generated method stub
+			if(arg0==null){
+				System.out.println("location null");
+				return;
+			}
+			//System.out.println("lala"+arg0.getLongitude());
+
+			Toast.makeText(getInstance(), arg0.getLongitude()+", "+arg0.getLatitude(),Toast.LENGTH_SHORT  );
+			GeoPoint newlocation=new GeoPoint((int)(arg0.getLatitude()*1e6),(int) (arg0.getLongitude()*1e6));
+			mylocation=newlocation;
+			MyLocationOverlay mylocOverlay=new MyLocationOverlay(mapView);
+			LocationData locData=new LocationData();
+			locData.latitude=arg0.getLatitude();
+			locData.longitude=arg0.getLongitude();
+			mylocOverlay.setData(locData);
+			mylocOverlay.enableCompass();
+			mapView.getOverlays().add(mylocOverlay);
+			mapView.refresh();
+			mapView.getController().animateTo(mylocation);
+		}
+
+		@Override
+		public void onReceivePoi(BDLocation arg0) {
+
+		}
+    	
+    }
+
+   
+}

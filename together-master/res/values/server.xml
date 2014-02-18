@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="host">itogether.sinaapp.com</string>
+    <string name="ListEvent">/ListEvent</string>
+    <string name="ListUser">/ListUser</string>
+    <string name="NewEvent">/NewEvent</string>
+    <string name="UpdateUserLocation">/UpdateUserLocation</string>
+    <string name="Follow">/Follow</string>
+    <string name="Unfollow">/Unfollow</string>
+    <string name="ListFollowEvent">/ListFollowEvent</string>
+    <string name="ListFollowUser">/ListFollowUser</string>
+</resources>

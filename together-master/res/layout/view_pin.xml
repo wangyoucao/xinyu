@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sh.whisper.ui.Pin android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="bottom|center" android:orientation="horizontal" android:background="@drawable/w_keypad_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/w_keypad_cell" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/w_keypad_cell" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/w_keypad_cell" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="25.0dip" android:src="@drawable/w_keypad_cell" />
+        </LinearLayout>
+        <TextView android:textColor="@color/Gray" android:layout_gravity="bottom|center" android:id="@id/w_pin_error" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Wrong pin - Try again" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="1" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_1" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="2" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_2" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="3" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_3" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="4" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_4" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="5" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_5" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="6" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_6" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="7" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_7" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="8" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_8" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="9" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_9" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:tag="11" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/w_keypad_blank" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="0" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_0" android:scaleType="fitXY" android:layout_weight="1.0" />
+        <ImageButton android:tag="10" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/whisper_keypad_delete" android:scaleType="fitXY" android:layout_weight="1.0" />
+    </LinearLayout>
+</sh.whisper.ui.Pin>

@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants" >
+
+    <LinearLayout
+        android:id="@id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.0dip"
+        android:layout_marginRight="12.0dip"
+        android:layout_marginTop="12.0dip"
+        android:background="@drawable/eventlistitem_corner"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/eventtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6.0dip"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingBottom="6.0dip"
+            android:paddingLeft="12.0dip"
+            android:paddingTop="6.0dip"
+            android:singleLine="true"
+            android:textColor="#ff555555"
+            android:textSize="14.0dip"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1.0dip"
+            android:layout_marginRight="1.0dip"
+            android:background="@drawable/list_sel_bg"
+            android:paddingBottom="5.0dip" >
+
+            <ImageView
+                android:id="@id/eventimageref"
+                android:layout_width="68.0dip"
+                android:layout_height="100.0dip"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6.0dip"
+                android:layout_marginTop="5.0dip"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic_listitem_null" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="100.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/eventimageref" >
+
+                <LinearLayout
+                    android:id="@id/interestlinear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5.0dip"
+                    android:orientation="vertical"
+                    android:paddingBottom="5.0dip" >
+
+                    <LinearLayout
+                        android:id="@id/eventdatalayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip"
+                        android:layout_marginTop="8.0dip" >
+
+                        <ImageView
+                            android:id="@id/imageView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:src="@drawable/icon_date" />
+
+                        <TextView
+                            android:id="@id/eventdatetextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="#ffb6b6b6"
+                            android:textColorHighlight="#ffa0a0a0"
+                            android:textSize="12.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/eventaddresslayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip" >
+
+                        <ImageView
+                            android:id="@id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:src="@drawable/icon_spot" />
+
+                        <TextView
+                            android:id="@id/eventaddresstextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:paddingRight="4.0dip"
+                            android:singleLine="true"
+                            android:textColor="#ffb6b6b6"
+                            android:textColorHighlight="#ffa0a0a0"
+                            android:textSize="12.0dip" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/eventcatlayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip"
+                        android:visibility="invisible" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginTop="2.0dip"
+                            android:src="@drawable/icon_catalog" />
+
+                        <TextView
+                            android:id="@id/eventcatalogtextview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="#ffa0a0a0"
+                            android:textColorHighlight="#ffa0a0a0"
+                            android:textSize="12.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/attendlinear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:id="@id/event_attend_framelayoutex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:visibility="gone" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_attend_date" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@id/event_atend_date_labelex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:text="05" />
+
+                            <TextView
+                                android:id="@id/event_atend_date_month_labelex"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_horizontal"
+                                android:text="12月" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@id/attend_address"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@id/eventotherframe"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="16.0dip"
+                android:layout_toLeftOf="@id/eventimageref" >
+
+                <TextView
+                    android:id="@id/eventotherstatuslabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:text="@string/eventstatusclose"
+                    android:visibility="invisible" />
+
+                <LinearLayout
+                    android:id="@id/eventotherlayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip" >
+
+                    <TextView
+                        android:id="@id/eventclosedtextview"
+                        style="@style/event_detail_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/eventcolsedtextlabel"
+                        style="@style/event_detail_label_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/event_label_closed" />
+
+                    <TextView
+                        android:id="@id/eventotherinterval2"
+                        android:layout_width="1.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip"
+                        android:layout_marginLeft="6.0dip"
+                        android:layout_marginRight="6.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:background="#fff4f4f4" />
+
+                    <TextView
+                        android:id="@id/eventinteresttextview"
+                        style="@style/event_detail_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/eventinteresttextlabel"
+                        style="@style/event_detail_label_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/event_label_interest" />
+
+                    <TextView
+                        android:id="@id/eventotherinterval1"
+                        android:layout_width="1.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4.0dip"
+                        android:layout_marginLeft="6.0dip"
+                        android:layout_marginRight="6.0dip"
+                        android:layout_marginTop="4.0dip"
+                        android:background="#fff4f4f4" />
+
+                    <TextView
+                        android:id="@id/eventjoinedtextview"
+                        style="@style/event_detail_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/eventjoinedtextlabel"
+                        style="@style/event_detail_label_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/event_label_joined" />
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="6.0dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:paddingTop="5.0px" />
+    </LinearLayout>
+
+</RelativeLayout>

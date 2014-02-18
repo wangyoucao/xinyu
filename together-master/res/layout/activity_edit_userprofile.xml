@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/root_layout" android:background="@color/background_normal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_header" />
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" style="@style/Style_Scrollable">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/include_editprofile_photos" />
+            <LinearLayout android:orientation="vertical" style="@style/Style_Patterns">
+                <RelativeLayout android:id="@id/layout_name" style="@style/Style_Patterns_Content_Clickable_Setting">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/textview_shownamess" android:text="显示姓名" style="@style/Patterns_Text_Left" />
+                    <com.immomo.momo.android.view.EmoteTextView android:id="@id/profile_tv_name" android:maxWidth="160.0dip" android:text="" style="@style/Profile_Item_Right" />
+                </RelativeLayout>
+                <include layout="@layout/include_patterns_divideline" />
+                <RelativeLayout android:id="@id/layout_birthday" style="@style/Style_Patterns_Content_Clickable_Setting">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/textviewmomotitle" android:text="出生日期" style="@style/Patterns_Text_Left" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_birthday" android:text="" style="@style/Profile_Item_Right" />
+                </RelativeLayout>
+                <include layout="@layout/include_editprofile_industry" />
+                <include layout="@layout/include_patterns_divideline" />
+                <RelativeLayout android:id="@id/layout_emotion" android:background="@color/background_normal" style="@style/Style_Patterns_Content_Clickable_Setting">
+                    <com.immomo.momo.android.view.HandyTextView android:text="情感状态" style="@style/Patterns_Text_Left" />
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_tv_emotion" android:text="" style="@style/Profile_Item_Right" />
+                </RelativeLayout>
+                <include layout="@layout/include_patterns_divideline" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_sign" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_habit" android:text="个性签名" style="@style/Edit_Profile_Item_Top" />
+                    <com.immomo.momo.android.view.EmoteEditeText android:id="@id/profile_tv_sign" android:background="@drawable/edittext_multiline" android:hint="@string/user_profile_personal_signature" style="@style/Edit_Profile_Item_Bottom" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/layout_friend_taps" android:focusable="false" style="@style/Style_Patterns">
+                <com.immomo.momo.android.view.HandyTextView android:id="@id/textview_introduction_title" android:text="个人介绍" style="@style/Style_Patterns_SectionBar" />
+                <include layout="@layout/include_patterns_sectionline" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_interest" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_habit" android:text="爱好和特点" style="@style/Edit_Profile_Item_Top" />
+                    <com.immomo.momo.android.view.EmoteEditeText android:id="@id/profile_tv_interest" android:background="@drawable/edittext_multiline" android:hint="@string/user_profile_default_interest" style="@style/Edit_Profile_Item_Bottom" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:text="感兴趣的陌陌吧" style="@style/Edit_Profile_Item_Top" />
+                    <com.immomo.momo.android.view.HandyTextView android:textSize="16.0sp" android:textColor="@color/text_content" android:gravity="center_vertical" android:id="@id/profile_tv_tieba" android:background="@drawable/bglistitem_selector_nomaltran" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:hint="点击添加陌陌吧" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_company" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_company" android:text="公司" style="@style/Edit_Profile_Item_Top" />
+                    <com.immomo.momo.android.view.EmoteEditeText android:id="@id/profile_tv_company" android:background="@drawable/edittext_multiline" android:hint="@string/user_profile_default_company" style="@style/Edit_Profile_Item_Bottom" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_school" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_school" android:text="学校" style="@style/Edit_Profile_Item_Top" />
+                    <com.immomo.momo.android.view.EmoteEditeText android:id="@id/profile_tv_school" android:background="@drawable/edittext_multiline" android:hint="@string/user_profile_default_school" style="@style/Edit_Profile_Item_Bottom" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_hangout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_place" android:text="常出没的地方" style="@style/Edit_Profile_Item_Top" />
+                    <com.immomo.momo.android.view.EmoteEditeText android:id="@id/profile_tv_hangout" android:background="@drawable/edittext_multiline" android:hint="@string/user_profile_default_hangout" style="@style/Edit_Profile_Item_Bottom" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_website" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                    <com.immomo.momo.android.view.HandyTextView android:id="@id/profile_intro_url" android:text="个人说明" style="@style/Edit_Profile_Item_Top" />
+                    <com.immomo.momo.android.view.EmoteEditeText android:id="@id/profile_tv_web" android:background="@drawable/edittext_multiline" android:text="" android:hint="@string/user_profile_default_website" style="@style/Edit_Profile_Item_Bottom" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/layout_shadow" android:background="@drawable/bg_topbar_shadow" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/layout_header" />
+</RelativeLayout>

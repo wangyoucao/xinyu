@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/w_table"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@id/activity_thumb"
+        android:layout_width="160dp"
+        android:layout_height="180dp"
+       
+        
+        android:layout_marginTop="4.0dip"
+        android:layout_weight="0.73"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:paddingLeft="2.0dip"
+        android:paddingRight="2.0dip"
+         >
+
+        <TextView
+            android:id="@id/wh_timeago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="10m"
+            android:textColor="@color/DarkGray"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/wh_timeago_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/wh_timeago"
+            android:background="@drawable/w_icon_clock" 
+            
+            android:layout_marginRight="5dp"
+            android:textSize="12.0sp" />
+            />
+            
+        <TextView
+            android:id="@id/wh_interesting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wh_timeago_label"
+            android:text="10"
+            android:textColor="@color/DarkGray"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/wh_interestinglabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@id/wh_interesting"
+            android:background="@drawable/w_icon_heart" 
+            android:layout_marginRight="5dp"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/wh_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/wh_interestinglabel"
+            android:text="4个"
+            android:textColor="@color/DarkGray"
+            android:textSize="12.0sp" />
+
+        <TextView
+            android:id="@id/wh_reply_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wh_interestinglabel"
+            android:layout_toRightOf="@id/wh_reply"
+            
+            android:textSize="12.0sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

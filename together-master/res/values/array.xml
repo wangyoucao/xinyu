@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="color_names">
+        <item>首页</item>
+        <item>我的活动</item>
+        <item>收件箱</item>
+        <item>设置</item>
+    </string-array>
+    
+    <string-array name="birds">
+        <item>Eagle</item>
+        <item>Flamingo</item>
+        <item>Heron</item>
+        <item>Ostrich</item>
+        <item>Peacock</item>
+        <item>Penguin</item>
+        <item>Toucan</item>
+        <item>Turkey</item>
+        <item>Vulture</item>
+    </string-array>
+
+     <string-array name="events_period_name">
+        <item>全部时间</item>
+        <item>最近一周</item>
+        <item>今天</item>
+        <item>明天</item>
+        <item>周末</item>
+    </string-array>
+    <string-array name="events_period_value">
+        <item>future</item>
+        <item>week</item>
+        <item>today</item>
+        <item>tomorrow</item>
+        <item>weekend</item>
+    </string-array>
+    <string-array name="events_type_name">
+        <item>全部类型</item>
+        <item>音乐</item>
+        <item>电影</item>
+        <item>展览</item>
+        <item>戏剧</item>
+        <item>讲座</item>
+        <item>聚会</item>
+        <item>运动</item>
+        <item>旅行</item>
+        <item>公益</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="events_type_value">
+        <item>all</item>
+        <item>music</item>
+        <item>film</item>
+        <item>exhibition</item>
+        <item>drama</item>
+        <item>salon</item>
+        <item>party</item>
+        <item>sports</item>
+        <item>travel</item>
+        <item>commonweal</item>
+        <item>others</item>
+    </string-array>
+    <string-array name="weekindication">
+        <item>周日</item>
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+    </string-array>
+
+</resources>
