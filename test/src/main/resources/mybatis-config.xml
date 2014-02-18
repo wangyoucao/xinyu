@@ -16,4 +16,5 @@
             <property name="dialectClass" value="com.github.miemiedev.mybatis.paginator.dialect.MySQLDialect"/>
         </plugin>
     </plugins>
+    
 </configuration>

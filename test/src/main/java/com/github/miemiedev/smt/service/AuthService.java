@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
@@ -16,6 +17,7 @@ import com.github.miemiedev.smt.repository.UserDao;
 
 @Service
 @Transactional(readOnly = false)
+@ActiveProfiles("development-web") 
 public class AuthService {
 
     @Autowired

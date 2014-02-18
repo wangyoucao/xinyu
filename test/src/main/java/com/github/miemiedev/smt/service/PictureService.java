@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.github.miemiedev.mybatis.paginator.domain.PageBounds;
@@ -12,7 +13,7 @@ import com.github.miemiedev.smt.entity.Picture;
 import com.github.miemiedev.smt.repository.PictureDao;
 
 @Service
-
+@ActiveProfiles("development-web") 
 public class PictureService  {
 
 	@Autowired

@@ -18,13 +18,11 @@
 		insert ignore into user (username,email,state,aliases_name) values
 		(#{name},#{email},#{state},#{aliasesName})
 	</insert>
-	<select id="get" parameterType="long" resultMap="userResult">
+	<select id="get" parameterType="String" resultMap="userResult">
 		select *
-		from user ubi
-		where ubi.USER_ID = #{id, jdbcType=NUMERIC}
+		from user
+		where user.id = #{id}
 	</select>
-
-
 	<select id="queryByDeptCode" resultMap="userResult">
 		select * from FP_USER_BASIC_INFO ubi where
 		<if test="deptCode != null and deptCode != ''">

@@ -164,7 +164,16 @@
 			<artifactId>spring-test</artifactId>
 			<version>3.2.0.RELEASE</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.3</version>
+		</dependency>
 	</dependencies>
 
 
