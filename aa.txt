@@ -9,6 +9,9 @@ http://blog.csdn.net/springsky_/article/details/8213898
 http://www.cocoachina.com/appstore/case/2014/0213/7815.html
 
 http://adblogcat.com/custom-view-to-draw-rotate-erase-and-convert-images-to-black-and-white/
+
+http://blog.csdn.net/nnmmbb/article/details/16949349
+http://www.dewen.org/q/2024/android%E5%9B%BE%E7%89%87%E5%A6%82%E4%BD%95%E6%8C%89%E8%87%AA%E5%B7%B1%E6%8C%87%E5%AE%9A%E7%9A%84%E9%A2%9C%E8%89%B2%E6%98%BE%E7%A4%BA
 一
 1.register using phone number;
 2.setting information,update
