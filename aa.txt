@@ -4,6 +4,8 @@ http://bbs.9ria.com/thread-216101-1-1.html
 http://www.donews.com/idonews/article/1018.shtm
 http://tech.qq.com/a/20140211/008807.htm
 
+http://blog.csdn.net/springsky_/article/details/8213898
+
 http://www.cocoachina.com/appstore/case/2014/0213/7815.html
 
 http://adblogcat.com/custom-view-to-draw-rotate-erase-and-convert-images-to-black-and-white/
@@ -16,4 +18,13 @@ http://adblogcat.com/custom-view-to-draw-rotate-erase-and-convert-images-to-blac
 
 1.kill after reading
 2.
+
+        contentLayout.setDrawingCacheEnabled(true);
+        contentLayout.measure(
+                        MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED),
+                        MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED));
+        contentLayout.layout(0, 0, contentLayout.getMeasuredWidth(),
+                        contentLayout.getMeasuredHeight());
+        contentLayout.buildDrawingCache();
+        Bitmap bitmap= contentLayout.getDrawingCache();
 
